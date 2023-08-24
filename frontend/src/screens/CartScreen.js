@@ -1,7 +1,7 @@
 import './CartScreen.css';
 
 const CartScreen = () => {
-    return (<div className="cartscreen"> <h1>CartScreen </h1> </div>
+    return (<div className="cartscreen"> <h1>Hello </h1> </div>
     );
     
 

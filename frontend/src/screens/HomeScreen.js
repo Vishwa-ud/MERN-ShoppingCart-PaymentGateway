@@ -1,10 +1,10 @@
-import "./HomeScreen.css";
+import './HomeScreen.css';
 
 //components
 import Product from '../components/Product';
 
 const HomeScreen = () => {
-    return <div className="homescreen"> 
+    return (   <div className="homescreen"> 
     <h2 className="homescreen__title">
        Hot Deals and Exclusives
     </h2>
@@ -17,8 +17,8 @@ const HomeScreen = () => {
 
     </div>
     
-     </div>;
-    
+     </div>
+    );
 
 };
 

@@ -22,14 +22,14 @@ const Navbar = ({click}) => {
             </Link>
         </li>
         <li>
-            <Link to ="/">
+            <Link to ="/shop">
                 Shop
             </Link>
         </li>
 
          </ul>
         
-        <div className="deals__menue" onClick={click}>
+        <div className="hamburger__menu" onClick={click}>
             <div></div>
             <div></div>
             <div></div>
