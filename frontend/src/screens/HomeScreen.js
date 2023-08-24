@@ -1,7 +1,7 @@
-import './HomeScreen.css';
+import "./HomeScreen.css";
 
 //components
-
+import Product from '../components/Product';
 
 const HomeScreen = () => {
     return <div className="homescreen"> 
@@ -9,7 +9,11 @@ const HomeScreen = () => {
        Hot Deals and Exclusives
     </h2>
     <div className="homescreen__products">
-         
+         <Product />
+         <Product />
+         <Product />
+         <Product />
+         <Product />
 
     </div>
     

@@ -1,18 +1,40 @@
 import './Navbar.css';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+
+
+const Navbar = ({click}) => {
     return (
         <nav className="navbar">
-            <div className="navbar__logo">
-                <h2>Deals And Exclusives</h2>
+        
+        <div className="navbar__logo">
+            <h2>Deals and Exclusives</h2>
             </div>
-            <ul className="navbar__links">
-                <li>
-                    <Link></Link>
-                </li>
-            </ul>
-                </nav>
-    )
-}
+        
+        <ul className="navbar__links"> 
+        <li>
+            <Link to ="/cart" className="cart__link">
+                <i className="fas fa-shopping-cart"></i>
+                <span>
+                Cart
+                <span className="cartlogo__badge">0</span>
+                </span>
+            </Link>
+        </li>
+        <li>
+            <Link to ="/">
+                Shop
+            </Link>
+        </li>
+
+         </ul>
+        
+        <div className="deals__menue" onClick={click}>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        </nav>
+ );
+};
 export default Navbar
