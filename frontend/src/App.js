@@ -8,7 +8,7 @@ import SideDrawer from "./components/SideDrawer";
 import Backdrop from "./components/Backdrop";
 
 // Screens
-import HomeScreen from "./screens/HomeScreen";
+import Home from "./screens/Home";
 import ProductScreen from "./screens/ProductScreen";
 import CartScreen from "./screens/CartScreen";
 
@@ -22,9 +22,9 @@ function App() {
       <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
       <main className="app">
         <Routes>
-          <Route exact path="/" element={<HomeScreen/>} />
-          <Route exact path="/product/:id" element={<ProductScreen/>} />
-          <Route exact path="/cart" element={<CartScreen/>} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/product/:id" element={<ProductScreen />} />
+          <Route exact path="/cart" element={<CartScreen />} />
         </Routes>
       </main>
     </Router>
