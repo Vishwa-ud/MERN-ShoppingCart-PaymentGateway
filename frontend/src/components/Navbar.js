@@ -7,7 +7,7 @@ const Navbar = ({ click }) => {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <h2>Shopping Cart</h2>
+        <h2>GALAXY CINEMAS</h2>
       </div>
 
       <ul className="navbar__links">
