@@ -1,4 +1,5 @@
 import './Home.css'
+//Components
 import Product from "../components/Product";
 
 const Home = () => {
