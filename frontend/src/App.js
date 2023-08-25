@@ -25,6 +25,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/product/:id" element={<ProductScreen />} />
           <Route exact path="/cart" element={<CartScreen />} />
+          
         </Routes>
       </main>
     </Router>
