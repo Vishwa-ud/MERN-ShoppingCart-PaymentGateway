@@ -34,8 +34,7 @@ const ProductScreen = () => {
     </p>
         </div>
     </div>
-     </div>);
-    
-
+     </div>
+     );
 };
 export default ProductScreen;
