@@ -10,16 +10,15 @@ const SideDrawer = ({show, click}) => {
     <ul className="sidedrawer__links" onClick={click}>
         <li>
             <Link to="/cart">
-            <i className="fa fa-shopping-cart">
+            <i className="fa fa-shopping-cart"></i>
                 <span>
                     Cart<span className="sidedrawer__cartbadge">0</span>
                 </span>
 
-            </i>
             </Link>
         </li>
         <li>
-            <Link to="/">Shop</Link>
+            <Link to="/home">Shop</Link>
         </li>
         </ul>
         </div>;
