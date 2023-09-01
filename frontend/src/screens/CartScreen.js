@@ -38,7 +38,7 @@ const CartScreen = () => {
 
             {cartItems.length === 0 ? (
                 <div>
-                Your Cart is Empty <Link to="/shop">Go Back</Link>
+                Your Cart is Empty <Link to="/home">Go Back</Link>
             </div>//0 == no items in cart if cart is empty show go back
             ) : ( cartItems.map((item) => <CartItem 
             key ={item.product} item={item} qtyChangeHandler ={qtyChangeHandler} removeHandler ={removeHandler} />)//else show cart items
