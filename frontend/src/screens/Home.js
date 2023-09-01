@@ -9,9 +9,7 @@ const Home = () => {
   const getProducts = useSelector((state) => state.getProducts);
   const { products, loading, error } = getProducts;
 
-  // Initialize the filteredProducts state with all products
   const [filteredProducts, setFilteredProducts] = useState([]);
-
   const [searchInput, setSearchInput] = useState('');
 
   useEffect(() => {
@@ -56,6 +54,8 @@ const Home = () => {
           <h2>loading...</h2>
         ) : error ? (
           <h2>{error}</h2>
+        ) : filteredProducts.length === 0 ? (
+          <h2>No results found.</h2>
         ) : (
           filteredProducts.map((product) => (
             <Product
