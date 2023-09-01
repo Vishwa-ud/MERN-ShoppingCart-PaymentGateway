@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Product from '../components/Product';
 
 //Actions
-import { getProducts as listProducts } from '../redux/actions/productActions';
+import { getProducts as listProducts } from '../redux/actions/productActions';//request to backend to get products
 
 const Home = () => {
     const dispatch = useDispatch();
@@ -15,7 +15,8 @@ const Home = () => {
     useEffect(() => {
         dispatch(listProducts());
     }, [dispatch]);
-
+    
+//No loading No Error if none of these are true map through products
 
     return (
         <div className="homescreen">

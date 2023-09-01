@@ -5,11 +5,22 @@ import {Link} from 'react-router-dom';
 //Componets
 import CartItem from '../components/CartItem';
 
+//Actions
+import {addToCart,removeFromCart} from '../redux/actions/cartActions';
+
 const CartScreen = () => {
     const dispatch = useDispatch();
 
-    const cart = useSelector(state => state.cart);
-    const {cartItems} = cart;
+    const cart = useSelector(state => state.cart);//select state and what want from state
+    const {cartItems} = cart;//access cart items
+
+    const qtyChangeHandler = (id, qty) => {
+        dispatch(addToCart(id, qty));
+    }// qty handler
+
+    const removeHandler = (id) => {
+        dispatch(removeFromCart(id));
+    }//remove from cart
 
     
 
@@ -19,9 +30,9 @@ const CartScreen = () => {
 
             {cartItems.length === 0 ? (
                 <div>
-                Your Cart is Empty <Link to="/home">Go Back</Link>
-            </div>
-            ) : ( cartItems.map((item) => <CartItem item={item}/>)
+                Your Cart is Empty <Link to="/shop">Go Back</Link>
+            </div>//0 == no items in cart if cart is empty show go back
+            ) : ( cartItems.map((item) => <CartItem item={item} qtyChangeHandler ={qtyChangeHandler} removeHandler ={removeHandler} />)//else show cart items
             )}
                 
         
