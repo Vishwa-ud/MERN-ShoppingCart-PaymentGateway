@@ -21,9 +21,9 @@ const ProductScreen = () => {
     }
   }, [dispatch, id, product]);
 
-  const addToCartHandler = () => {
+  const addToCartHandler = () => {// Add addToCartHandler function
     dispatch(addToCart(id, qty));
-    navigate(`/cart`); // Use navigate to perform navigation
+    navigate(`/home`); // Use navigate to perform navigation
   };
 
   return (
