@@ -40,7 +40,7 @@ const ProductScreen = () => {
             </div>
             <div className="left__info">
               <p className="left__name">{product.name}</p>
-              <p>Price: ${product.price}</p>
+              <p>Price: Rs.{product.price}</p>
               <p>Description: {product.description}</p>
             </div>
           </div>
@@ -48,7 +48,7 @@ const ProductScreen = () => {
             <div className="right__info">
               <p>
                 Price:
-                <span>${product.price}</span>
+                <span>Rs.{product.price}</span>
               </p>
               <p>
                 Status:
