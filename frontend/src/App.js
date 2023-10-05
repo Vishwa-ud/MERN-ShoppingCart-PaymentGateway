@@ -13,6 +13,7 @@ import ProductScreen from "./screens/ProductScreen";
 import CartScreen from "./screens/CartScreen";
 import Success from "./components/Success";
 import Cancel from "./components/Cancel";
+import Payment from "./screens/Payment";
 
 function App() {
   const [sideToggle, setSideToggle] = useState(false);
@@ -29,6 +30,7 @@ function App() {
           <Route exact path="/cart" element={<CartScreen />} />
           <Route exact path="/success" element={<Success />} />
           <Route exact path="/cancel" element={<Cancel />} />
+          <Route exact path="/payment" element={<Payment />} />
           
         </Routes>
       </main>
