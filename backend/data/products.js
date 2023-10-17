@@ -1,22 +1,77 @@
 const products = [
-    {
-      name: "Combo Pack 1",
+  {
+    name: "Special family Combo",
+    imageUrl:
+      "https://cinepax.com/IT-CDN/Themes/_default/Images/main6.jpg",
+    description:
+      "2 Large salty pop corn and 4 Large drinks OR 2 Large Caramel pop corn and 4 Large drinks ",
+    price: 1800,
+    countInStock: 10,
+  },
+  {
+    name: "Barbie Pop corn",
+    imageUrl:
+      "https://www.otempo.com.br/image/contentid/policy:1.3016129:1689535818/image.jpeg?f=3x2&q=0.6&w=1200&$p$f$q$w=a356c7d",
+    description:
+      "Special offer for Barbie Fans",
+    price: 500,
+    countInStock: 12,
+  },
+  {
+    name: "Combo concession Pack 1",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYzOTjGhvPUIvzt_ItSRyjLmt_TarDy6W17w&usqp=CAU",
+    description:
+      "Special deal for movie lovers One Large Cheese Popcorn and One Medium Drink.",
+    price: 400,
+    countInStock: 15,
+  },
+  {
+    name: "Combo concession Pack 2",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpUJojmjAeT1T0PczNPd-X0o1cbUg4RHImtQ&usqp=CAU",
+    description:
+      "Special deal for couples One Large Popcorn and Two Drinks (Medium).",
+    price: 900,
+    countInStock: 10,
+  },
+  {
+      name: "Movie Lover Merchandise Pack",
       imageUrl:
-        "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80",
+        "https://www.fanplus.com/products/842-848.jpg",
       description:
-        "PlayStation 5 (PS5) is a home video game console developed by Sony Interactive Entertainment. Announced in 2019 as the successor to the PlayStation 4, the PS5 was released on November 12, 2020 in Australia, Japan, New Zealand, North America, Singapore, and South Korea, and November 19, 2020 onwards in other major markets except China and India.",
-      price: 499,
-      countInStock: 15,
+        "FAN+ T-Shirt + Cap For Rs.950.",
+      price: 950,
+      countInStock: 20,
     },
     {
-      name: "Combo Pack 2",
+      name: "Special BlueBeetle Pack",
       imageUrl:
-        "https://images.unsplash.com/photo-1605787020600-b9ebd5df1d07?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1463&q=80",
+        "https://media.distractify.com/brand-img/xkbl5n_Xn/0x0/cinemark-blue-beetle-1691762984920.jpeg",
       description:
-        "Welcome to a new era of iPhone. Beautifully bright 6.1-inch Super Retina XDR display.1 Ceramic Shield with 4x better drop performance.2 Incredible low-light photography with Night mode on all cameras. Cinema-grade Dolby Vision video recording, editing, and playback. Powerful A14 Bionic chip. And new MagSafe accessories for easy attach and faster wireless charging.3 Let the fun begin.",
-      price: 1099,
+        "Special offer for blue beetle Pop corn + Toys ",
+      price: 1500,
+      countInStock: 8,
+    },
+    {
+      name: "Fast X Merchandise Pack",
+      imageUrl:
+        "https://cdn.entertainment-focus.com/wp-content/uploads/2023/05/18224411/fastx_intl_16x9_packshot_publi-1-696x392.jpg",
+      description:
+        "Limited Offer For Fast X, Grab Your Fast X  -T-Shirt(XL,L,M,S Available)-Cap with Free Water Bottel For only Rs:1200.",
+      price: 1200,
       countInStock: 10,
-    }, 
+    },
+    {
+      name: "Kids Combo",
+      imageUrl:
+        "https://i.pinimg.com/originals/58/7d/bb/587dbb04dc3dcb7f25ae77a70362e006.jpg",
+      description:
+        "Special offer for Kids",
+      price: 250,
+      countInStock: 20,
+    },
+    
     
   ];
   

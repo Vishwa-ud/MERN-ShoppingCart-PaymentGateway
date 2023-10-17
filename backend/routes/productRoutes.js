@@ -5,10 +5,10 @@ const { getAllProducts, getProductsById } = require("../controller/productContro
 //@Get all products from db
 //@route GET /api/products
 //@access Public
-router.get('/', getAllProducts)
+router.get("/", getAllProducts)
 //@Get all products from db
 //@route GET /api/products/:id
 //@access Public
-router.get('/:id', getProductsById)
+router.get("/:id", getProductsById)
 
 module.exports = router;

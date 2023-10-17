@@ -1,12 +1,41 @@
+import "./App.css";
+import { useState } from "react";
+import { BrowserRouter as Router, Routes , Route } from "react-router-dom";
 
-import './App.css';
+// Components
+import Navbar from "./components/Navbar";
+import SideDrawer from "./components/SideDrawer";
+import Backdrop from "./components/Backdrop";
+
+// Screens
+import Home from "./screens/Home";
+import ProductScreen from "./screens/ProductScreen";
+import CartScreen from "./screens/CartScreen";
+import Success from "./components/Success";
+import Cancel from "./components/Cancel";
+import Payment from "./screens/Payment";
 
 function App() {
+  const [sideToggle, setSideToggle] = useState(false);
+
   return (
-    <div className="app">
-      Hello World!
-    </div>
+    <Router>
+      <Navbar click={() => setSideToggle(true)} />
+      <SideDrawer show={sideToggle} click={() => setSideToggle(false)} />
+      <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
+      <main className="app">
+        <Routes>
+          <Route exact path="/home" element={<Home />} />
+          <Route exact path="/product/:id" element={<ProductScreen />} />
+          <Route exact path="/cart" element={<CartScreen />} />
+          <Route exact path="/success" element={<Success />} />
+          <Route exact path="/cancel" element={<Cancel />} />
+          <Route exact path="/payment" element={<Payment />} />
+          
+        </Routes>
+      </main>
+    </Router>
   );
-}
+};
 
 export default App;
