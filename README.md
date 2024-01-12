@@ -1,8 +1,8 @@
-# Shopping_Cart
-cart using React and Redux for our frontend and Node, Express and MongoDB for our backend.
+# full stack shopping cart with payment gateway
+Using React and Redux for frontend and Node, Express and MongoDB for backend.
 ---
 ## 🔋Features
- 👉 **Shop Screen
+ 👉 **Product Screen
 ![teatre shop](https://github.com/Vishwa-ud/Shopping_Cart/assets/94515855/26d14ac2-04c0-47b1-9ecb-26afa66fdf08)
 ## 👉 **Product View
 ![teatreproductview](https://github.com/Vishwa-ud/Shopping_Cart/assets/94515855/1afb5b72-2473-460e-9216-69e74e255157)
