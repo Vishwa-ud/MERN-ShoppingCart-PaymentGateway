@@ -1,4 +1,4 @@
-# full stack shopping cart with payment gateway
+# Full stack shopping cart with payment gateway
 Using React and Redux for frontend and Node, Express and MongoDB for backend.
 ---
 ## 🔋Features
